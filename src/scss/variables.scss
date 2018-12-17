@@ -22,6 +22,9 @@ $link-color: #4A90E2;
 .font-size-17 {
   font-size: 17px;
 }
+.font-size-20 {
+  font-size: 20px;
+}
 
 .l-height-20 {
   line-height: 20px;
@@ -36,6 +39,12 @@ $link-color: #4A90E2;
 }
 .max-width-60 {
   max-width: 60px;
+}
+//width adaptive
+@media (max-width: 840px) {
+  .width-p-100-a {
+    width: 100%;
+  }
 }
 
 //height
@@ -56,3 +65,5 @@ $link-color: #4A90E2;
 .m-bottom-20 {
   margin-bottom: 20px;
 }
+
+

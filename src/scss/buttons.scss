@@ -50,10 +50,12 @@ button {
     background: none;
     border: none;
     color: $link-color;
-    line-height: 7px;
     text-align: center;
     border-bottom: 1px $link-color solid;
     cursor: pointer;
+    margin: 0 auto;
+    border-radius: 0;
+    margin-bottom: 20px;
     &:hover {
       border:none;
       color: $link-color;

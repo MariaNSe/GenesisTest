@@ -3,47 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Top 5 Best Dating Sites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../dist/css/app.css">
 </head>
 <body>
-    <div class="top width-p-100">
-        <nav class="menu-mobile" role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <div>
-                    <a href="#"><li>Top 5 sites</li></a>
-                    <a href="#"><li>Ukrainian dating sites</li></a>
-                    <a href="#"><li>Russian dating sites</li></a>
-                    <a href="#"><li>Asian dating sites</li></a>
-                    <a href="#"><li>Blog</li></a>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-        <div class="display m-0-auto display__row display__wrap wrapper display__align-items-center display__justify-content-space-between">
-            <img
-                class="item"
-                src="../src/img/logo.svg"
-                alt="logo"
-            />
-            <a class="item menu" href="">
-                Top 5 sites
+    <div class="top width-p-100 m-0-auto">
+        <div class="topnav m-0-auto font-size-15" id="myTopnav">
+            <a href="#" class="active">
+                <img
+                    class="logo"
+                    src="../src/svg/logo.svg"
+                    alt="logo"
+                />
             </a>
-            <a class="item menu" href="">
-                Ukrainian dating sites
-            </a>
-            <a class="item menu" href="">
-                Russian dating sites
-            </a>
-            <a class="item menu" href="">
-                Asian dating sites
-            </a>
-            <a class="item menu" href="">
-                Blog
+            <a href="#">Top 5 sites</a>
+            <a href="#">Ukrainian dating sites</a>
+            <a href="#">Russian dating sites</a>
+            <a href="#">Asian dating sites</a>
+            <a href="#">Blog</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars font-size-20"></i>
             </a>
         </div>
     </div>
@@ -276,7 +256,7 @@
         </div>
         </div>
     <div class="footer width-p-100">
-        <div class="item width-p-80 m-0-auto">
+        <div class="item width-p-80 width-p-100-a m-0-auto">
             <p class="font-size-17">
                 Learn how to meet the prettiest brides
             </p>
@@ -313,5 +293,15 @@
         </div>
     </div>
     <script src="../dist/js/app.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 </html>
