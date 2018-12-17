@@ -1,0 +1,34 @@
+$breakpoint-t: 840px;
+$breakpoint-m: 1025px;
+$breakpoint-l: 1400px;
+
+.display {
+  display: flex;
+}
+.display__row {
+  flex-direction: row;
+}
+.display__column{
+  flex-direction: column;
+}
+.display__wrap {
+  flex-wrap: wrap;
+}
+.item {
+  padding: 1em;
+}
+.display__align-items-center {
+  align-items: center;
+}
+.display__align-items-end {
+  align-items: flex-end;
+}
+.display__align-items-baseline {
+  align-items: baseline;
+}
+.display__justify-content-space-between {
+  justify-content: space-between;
+}
+.display__justify-content-space-around {
+  justify-content: space-around;
+}
