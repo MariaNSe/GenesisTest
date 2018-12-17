@@ -17,14 +17,24 @@
                     alt="logo"
                 />
             </a>
-            <a href="#">Top 5 sites</a>
-            <a href="#">Ukrainian dating sites</a>
-            <a href="#">Russian dating sites</a>
-            <a href="#">Asian dating sites</a>
-            <a href="#">Blog</a></li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars font-size-20"></i>
-            </a>
+            <input id="toggle" type="checkbox"/>
+
+            <label for="toggle" class="hamburger">
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
+            </label>
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav>
+                        <a href="#">Top 5 sites</a>
+                        <a href="#">Ukrainian dating sites</a>
+                        <a href="#">Russian dating sites</a>
+                        <a href="#">Asian dating sites</a>
+                        <a href="#">Blog</a>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
     <div class="wrapper m-0-auto">
@@ -293,15 +303,5 @@
         </div>
     </div>
     <script src="../dist/js/app.js"></script>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 </html>
